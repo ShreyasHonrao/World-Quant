@@ -1,4 +1,5 @@
 # World-Quant
+
 Strategy 1:<br/>
 alpha= -ts_decay_exp_window((2*close-high-low)/(high-low)*volume,252);<br/>
 b=ts_median(alpha,5);<br/>
