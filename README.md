@@ -46,4 +46,13 @@ group_neutralize(b,pv13_r2_min2_3000_sector)<br/>
 ![vega](https://github.com/ShreyasHonrao/World-Quant/assets/108209291/92904ad9-478c-48a7-ae16-715677e159c9)<br/>
 
 
+Strategy 6:</br>
+t=80;</br>
+p=10;</br>
+hm=1/(ts_mean(1/close,t));</br>
+am=ts_mean(close,t);</br>
+a=100*(1-(hm/am));</br>
+b=p/100;</br>
+trade_when(a>b,hump(ts_decay_exp_window((vwap/close)-1,t),hump=0.001),a<b)</br>
+
 
